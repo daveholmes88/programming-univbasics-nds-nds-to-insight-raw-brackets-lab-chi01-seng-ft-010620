@@ -45,7 +45,7 @@ def directors_totals(nds)
     "James Cameron" => total_cameron,
     "Spike Lee" => total_lee,
     "Wachowski Siblings" => total_wachowski,
-    "Robert Zemeckis" => total_zemeckis 
+    "Robert Zemeckis" => total_zemeckis
   }
 
   return money_hash

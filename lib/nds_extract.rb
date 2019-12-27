@@ -38,7 +38,7 @@ def directors_totals(nds)
     total_zemeckis += directors_database[5][:movies][zemeckisarray][:worldwide_gross]
     zemeckisarray += 1
   end
-  total_tarainto = 0
+  total_tarantino = 0
   tarantinoarray = 0
   while tarantinoarray < directors_database[6][:movies].length do
     total_tarantino += directors_database[6][:movies][tarantinoarray][:worldwide_gross]
@@ -64,7 +64,7 @@ def directors_totals(nds)
     "Spike Lee" => total_lee,
     "Wachowski Siblings" => total_wachowski,
     "Robert Zemeckis" => total_zemeckis,
-    "Quentin Tarainto" => total_tarantino,
+    "Quentin Tarantino" => total_tarantino,
     "Martin Scorsese" => total_scorsese,
     "Francis Ford Coppola" => total_coppola
   }

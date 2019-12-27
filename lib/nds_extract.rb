@@ -5,8 +5,8 @@ def directors_totals(nds)
   total_spielberg = 0
   spielbergarray = 0
   while spielbergarray < directors_database[0][:movies].length do
-    total_spielberg += directors_database[0][:movies][:worldwide_gross]
-    array2 += 1
+    total_spielberg += directors_database[0][:movies][spielbergarray][:worldwide_gross]
+    spielbergarray += 1
   end
   total_russo = 0
   russoarray = 0
@@ -14,8 +14,6 @@ def directors_totals(nds)
     total_russo += directors_database[1][:movies][:worldwide_gross]
     russoarray += 1
   end
-
-
   money_hash = {
     "Steven Spielberg" => total_spielberg,
     "Russo Brothers" => total_russo

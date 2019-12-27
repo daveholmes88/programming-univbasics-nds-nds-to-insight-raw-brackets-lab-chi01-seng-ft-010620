@@ -14,9 +14,24 @@ def directors_totals(nds)
     total_russo += directors_database[1][:movies][russoarray][:worldwide_gross]
     russoarray += 1
   end
+  total_cameron = 0
+  cameronarray = 0
+  while cameronarray < directors_database[2][:movies].length do
+    total_cameron += directors_database[2][:movies][cameronarray][:worldwide_gross]
+    cameronarray += 1
+  end
+  total_lee = 0
+  leearray = 0
+  while leearray < directors_database[3][:movies].length do
+    total_lee += directors_database[3][:movies][leearray][:worldwide_gross]
+    leearray += 1
+  end
+  
   money_hash = {
     "Stephen Spielberg" => total_spielberg,
-    "Russo Brothers" => total_russo
+    "Russo Brothers" => total_russo,
+    "James Cameron" => total_cameron,
+    "Spike Lee" => total_lee 
   }
 
   return money_hash

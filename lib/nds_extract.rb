@@ -38,6 +38,24 @@ def directors_totals(nds)
     total_zemeckis += directors_database[5][:movies][zemeckisarray][:worldwide_gross]
     zemeckisarray += 1
   end
+  total_tarainto = 0
+  taraintoarray = 0
+  while tarantinoarray < directors_database[6][:movies].length do
+    total_tarantino += directors_database[6][:movies][taraintoarray][:worldwide_gross]
+    taraintoarray += 1
+  end
+  total_scorsese = 0
+  scorsesarray = 0
+  while scorsesearray < directors_database[7][:movies].length do
+    total_scorsese += directors_database[7][:movies][scorsesearray][:worldwide_gross]
+    scorsesearray += 1
+  end
+  total_coppola = 0
+  coppolaarray = 0
+  while coppolaarray < directors_database[8][:movies].length do
+    total_coppola += directors_database[8][:movies][coppolaarray][:worldwide_gross]
+    coppolaarray += 1
+  end
 
   money_hash = {
     "Stephen Spielberg" => total_spielberg,
@@ -45,7 +63,10 @@ def directors_totals(nds)
     "James Cameron" => total_cameron,
     "Spike Lee" => total_lee,
     "Wachowski Siblings" => total_wachowski,
-    "Robert Zemeckis" => total_zemeckis
+    "Robert Zemeckis" => total_zemeckis,
+    "Quentin Tarainto" => total_tarantino,
+    "Martin Scorsese" => total_scorsese,
+    "Francis Ford Coppola" => total_coppola
   }
 
   return money_hash

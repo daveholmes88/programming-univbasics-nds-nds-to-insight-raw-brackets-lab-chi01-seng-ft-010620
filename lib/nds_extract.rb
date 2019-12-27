@@ -39,10 +39,10 @@ def directors_totals(nds)
     zemeckisarray += 1
   end
   total_tarainto = 0
-  taraintoarray = 0
+  tarantinoarray = 0
   while tarantinoarray < directors_database[6][:movies].length do
-    total_tarantino += directors_database[6][:movies][taraintoarray][:worldwide_gross]
-    taraintoarray += 1
+    total_tarantino += directors_database[6][:movies][tarantinoarray][:worldwide_gross]
+    tarantinoarray += 1
   end
   total_scorsese = 0
   scorsesarray = 0

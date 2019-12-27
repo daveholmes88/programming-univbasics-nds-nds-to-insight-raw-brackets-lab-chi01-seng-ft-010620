@@ -21,7 +21,7 @@ def directors_totals(nds)
     "Russo Brothers" => total_russo
   }
 
-  return money_hash 
+  return money_hash
   # Remember, it's always OK to pretty print what you get *in* to make sure
   # that you know what you're starting with!
   #

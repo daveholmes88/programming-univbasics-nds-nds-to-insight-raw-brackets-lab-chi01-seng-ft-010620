@@ -15,7 +15,7 @@ def directors_totals(nds)
     russoarray += 1
   end
   money_hash = {
-    "Steven Spielberg" => total_spielberg,
+    "Stephen Spielberg" => total_spielberg,
     "Russo Brothers" => total_russo
   }
 

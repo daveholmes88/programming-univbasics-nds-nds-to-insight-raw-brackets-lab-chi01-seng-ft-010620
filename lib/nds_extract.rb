@@ -11,7 +11,7 @@ def directors_totals(nds)
   total_russo = 0
   russoarray = 0
   while russoarray < directors_database[1][:movies].length do
-    total_russo += directors_database[1][:movies][:worldwide_gross]
+    total_russo += directors_database[1][:movies][russoarray][:worldwide_gross]
     russoarray += 1
   end
   money_hash = {

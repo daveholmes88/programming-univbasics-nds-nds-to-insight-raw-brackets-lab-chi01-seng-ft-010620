@@ -26,7 +26,7 @@ def directors_totals(nds)
     total_lee += directors_database[3][:movies][leearray][:worldwide_gross]
     leearray += 1
   end
-  
+
   money_hash = {
     "Stephen Spielberg" => total_spielberg,
     "Russo Brothers" => total_russo,

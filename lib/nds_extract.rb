@@ -43,8 +43,8 @@ def directors_totals(nds)
     "Stephen Spielberg" => total_spielberg,
     "Russo Brothers" => total_russo,
     "James Cameron" => total_cameron,
-    "Spike Lee" => total_lee
-    "Wachowski Siblings" => total_wachowski
+    "Spike Lee" => total_lee,
+    "Wachowski Siblings" => total_wachowski,
     "Robert Zemeckis" => total_zemeckis 
   }
 
